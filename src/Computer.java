@@ -18,6 +18,7 @@ public class Computer {
     }
 
     String getProcessor() {
+
         return processor;
     }
 
@@ -30,6 +31,7 @@ public class Computer {
     }
 
     void setGpu(String newGpu) {
+
         gpu = newGpu;
     }
 
@@ -46,7 +48,9 @@ public class Computer {
     }
 
     void setCost(int newCost) {
-        cost = newCost;
+        if (newCost > 0) {
+            cost = newCost;
+        }
     }
 
     boolean getWasWorthIt() {
